@@ -198,7 +198,13 @@
               50% {
                 transform: translateY(-10rem);
               }
+              60% {
+                transform: translateY(-10rem);
+              }
 
+              90% {
+                transform: translateY(0rem);
+              }
               100% {
                 transform: translateY(0rem);
               }
@@ -207,13 +213,19 @@
             @media screen and (max-width: 1300px) {
               @keyframes move {
                 0% {
-                  transform: translateY(0%);
+                  transform: translateY(10%);
                 }
 
                 50% {
                   transform: translateY(-120%);
                 }
+                60% {
+                  transform: translateY(-120%);
+                }
 
+                90% {
+                  transform: translateY(0%);
+                }
                 100% {
                   transform: translateY(0%);
                 }
