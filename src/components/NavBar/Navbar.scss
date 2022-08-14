@@ -1,0 +1,321 @@
+.app__navbar{
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    position: fixed;
+    z-index: 2;
+
+    @media screen and (max-width: 600px) {
+        padding-top: 0.5rem;
+        padding-bottom: 0.2rem;
+        
+    }
+
+
+
+.app__navbar-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img{
+        width: 70px;
+        height: auto;
+
+        @media screen and (min-width:2000px) {
+
+            width: 100px;
+            height: auto ;
+
+            
+        }
+        @media screen and (max-width: 600px) {
+
+            width: 50px;
+            
+        }
+    }
+
+}
+
+@media screen and (min-width:800px) {
+    .app__navbar-items {
+            flex: 1;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            list-style: none;
+            padding-top: 10px;
+
+            
+    
+    
+            li {
+                margin: 0 1rem;
+                text-transform: uppercase;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+    
+    
+    
+                div {
+                    width: 30px;
+                    height: 5px;
+                    border-radius: 2px;
+                    background: transparent;
+                    margin-bottom: 0.2rem;
+                    transition: width 0.2s ease-in-out;
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: rgba(51, 51, 51, 0.80);
+                    font-weight: 600;
+                    flex-direction: column;
+                    transition: all 0.2s ease-in-out;
+    
+    
+                    &:hover {
+                        color: #006AFF;
+                    }
+    
+                }
+    
+                &:hover {
+                    div {
+                        background-color: #006AFF;
+                    }
+                }
+
+                
+            }
+
+
+            @media screen and (max-width:800px) {
+                display: none;
+                
+            }
+
+            
+    
+    
+        }
+    
+}
+}
+
+
+//for small screens
+
+.app__navbar-menu{
+    
+    position: relative;
+    
+
+    .hamburger{
+        position: relative;
+        right: -10px;
+        z-index: 5;
+        margin-right: 0rem;
+        
+        
+        width: 50px;
+        height: 50px;
+        // background-color: #006AFF;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+        
+
+        div{
+            width: 30px;
+            height: 4px;
+            background-color:#006AFF;
+            display: block;
+            margin:2.5px;
+            border-radius: 6px;
+            transition: all 250ms ease-in;
+        }
+
+        .line1-toggle{
+                transform: rotate(45deg) translate(5px,5px);
+                background-color: white;
+            }
+        .line2-toggle{
+            opacity: 0;
+        }
+        .line3-toggle{
+            transform: rotate(-45deg) translate(5px,-6px);
+            background-color: white;
+        }
+
+        // &:active,&:hover{
+            
+
+        //     .line1-toggle{
+        //         transform: rotate(45deg) translate(5px,5px);
+        //     }
+        //     .line2-toggle{
+        //         opacity: 0;
+        //     }
+        //     .line3-toggle{
+        //         transform: rotate(-45deg) translate(5px,-6px);
+        //     }
+        // }
+            
+        
+
+
+    }
+
+    @media screen and (min-width:800px) {
+        display: none;
+        
+    }
+
+    
+
+
+}
+
+
+
+@media screen and (max-width:800px) {
+    %app__navbar-items {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            background: rgb(211, 240, 255);
+            padding-top: 20%;
+            top: 0;
+            height: 100vh;
+            width: 70%;
+            right: 0;
+            box-shadow: 0 0 20px rgba(168, 168, 168, 0.30);
+            background: #101010 url(../../assets/navbar_element9.png) no-repeat center;
+            background-size: 800px;
+            background-position: 50% 98%;
+            transition: all 500ms ease-out;
+    
+            @media screen and (max-width:450px) {
+                background-size: 600px;
+                background-position: 55% 90%;
+    
+            }
+    
+            @media screen and (max-width:400px) {
+                background-size: 500px;
+                background-position: 40% 98%;
+    
+            }
+    
+    
+    
+    
+            li {
+                display: block;
+                width: 100%;
+                padding-bottom: 15%;
+                display: flex;
+                margin-left: 10%;
+                padding-right: 20%;
+                justify-content: center;
+                flex-direction: column;
+                align-items: flex-start;
+    
+                div {
+                    display: block;
+                    background-color: transparent;
+                    width: 0%;
+                    height: 1px;
+    
+    
+    
+                }
+    
+                a {
+                    color: #ffffffde;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 25px;
+                    letter-spacing: 3px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    text-transform: uppercase;
+    
+                    &:hover {
+                        color: #ffffff;
+                    }
+    
+                }
+    
+                &:hover {
+    
+                    div {
+                        width: 100%;
+                        transition: all 250ms ease-in-out;
+                        background-color: #ffffff;
+                    }
+                }
+            }
+
+            
+    
+    
+        }
+
+                .app__navbar-items-show {
+                    @extend %app__navbar-items;
+                    clip-path: circle(100% at 90% 50%);
+                    -webkit-clip-path: circle(100% at 90% 50%);
+                }
+        
+                .app__navbar-items-hidden {
+                    @extend %app__navbar-items;
+                    clip-path: circle(0% at 90% 50%);
+                    -webkit-clip-path: circle(0% at 90% 3%);
+                    display: hidden;
+                    pointer-events: none;
+                }
+
+
+    
+}
+
+// .app__navbar-items-close {
+
+//      @extend %app__navbar-items-toggle;
+//      clip-path: circle(0% at 90% 50%);
+//      -webkit-clip-path: circle(0% at 90% 3%);
+
+// }
+
+//  .app__navbar-items-open {
+
+//      @extend %app__navbar-items-toggle;
+//      clip-path: circle(100% at 90% 50%);
+//      -webkit-clip-path: circle(100% at 90% 50%);
+
+// }
+
+
+
