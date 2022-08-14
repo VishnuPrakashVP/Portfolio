@@ -83,6 +83,14 @@
     grid-gap: 2rem;
     overflow: hidden;
 
+    @media screen and (min-width:1300px) {
+        justify-content: space-around;
+        padding-left: 5rem;
+        padding-right: 5rem;
+
+        
+    }
+
     @media screen and (max-width: 1300px) {
       grid-template-rows: 60% 40%;
       grid-template-columns: 100%;
@@ -244,7 +252,7 @@
             }
 
             @media screen and (max-width: 600px) {
-                grid-gap: 42%;
+                grid-gap: 35%;
             }
 
             h1 {
@@ -293,11 +301,20 @@
             }
             @media screen and (max-width: 600px) {
                 font-size: 3.5rem;
+                
+                
             }
           }
 
           @media screen and (max-width: 800px) {
             justify-content: flex-start;
+          }
+
+          @media screen and (max-width: 600px) {
+            height: 100%;
+            align-items: flex-start;
+            
+            
           }
         }
       }
