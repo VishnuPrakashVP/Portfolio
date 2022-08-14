@@ -83,12 +83,10 @@
     grid-gap: 2rem;
     overflow: hidden;
 
-    @media screen and (min-width:1000px) {
-        justify-content: space-around;
-        padding-left: 5rem;
-        padding-right: 5rem;
-
-        
+    @media screen and (min-width: 1000px) {
+      justify-content: space-around;
+      padding-left: 5rem;
+      padding-right: 5rem;
     }
 
     @media screen and (max-width: 1300px) {
@@ -96,9 +94,9 @@
       grid-template-columns: 100%;
     }
     @media screen and (max-width: 600px) {
-        font-size: 3rem;
-        grid-template-rows: 70% 30%;
-        grid-gap: 1rem;
+      font-size: 3rem;
+      grid-template-rows: 70% 30%;
+      grid-gap: 1rem;
     }
 
     .content-text {
@@ -151,8 +149,6 @@
           height: 100%;
           overflow: hidden;
 
-          
-
           .wrapper {
             height: 100%;
             padding: 0;
@@ -166,7 +162,6 @@
 
               h1 {
                 display: block;
-                
               }
 
               @media screen and (max-width: 800px) {
@@ -180,7 +175,6 @@
               height: 100%;
               h1 {
                 display: block;
-                
               }
 
               @media screen and (max-width: 800px) {
@@ -264,7 +258,7 @@
             }
 
             @media screen and (max-width: 600px) {
-                grid-gap: 35%;
+              grid-gap: 40%;
             }
 
             h1 {
@@ -312,9 +306,7 @@
               font-size: 4rem;
             }
             @media screen and (max-width: 600px) {
-                font-size: 3.5rem;
-                
-                
+              font-size: 3.5rem;
             }
           }
 
@@ -325,8 +317,6 @@
           @media screen and (max-width: 600px) {
             height: 100%;
             align-items: flex-start;
-            
-            
           }
         }
       }
@@ -345,7 +335,7 @@
           padding: 0.5rem;
         }
         @media screen and (max-width: 600px) {
-                padding: 0;
+          padding: 0;
         }
         .main-heading {
           width: 100%;
@@ -355,8 +345,8 @@
             padding: 0;
 
             @media screen and (max-width: 600px) {
-                font-size: 1.5rem;
-                padding: 0.2rem 0rem 0.2rem 0rem;
+              font-size: 1.5rem;
+              padding: 0.2rem 0rem 0.2rem 0rem;
             }
 
             span {
@@ -392,17 +382,17 @@
             width: 50%;
           }
           @media screen and (max-width: 600px) {
-                width: 90%;
-                font-size: 0.8rem;
-            }
+            width: 90%;
+            font-size: 0.8rem;
+          }
           h3 {
             font-weight: 500;
             text-align: justify;
             text-justify: distribute;
 
-            @media screen and (max-width:800px ) {
-                text-align:start;
-                text-justify:distribute;
+            @media screen and (max-width: 800px) {
+              text-align: start;
+              text-justify: distribute;
             }
           }
         }
@@ -420,19 +410,15 @@
         float: right;
         padding: 0;
 
-        @media screen and (min-width:1000px) {
-            width: 45rem;
-            
+        @media screen and (min-width: 1000px) {
+          width: 45rem;
         }
 
         @media screen and (max-width: 600px) {
-                width: 15rem;
-                padding: 0;
-                float: right;
-                
+          width: 15rem;
+          padding: 0;
+          float: right;
         }
-
-         
       }
     }
   }
