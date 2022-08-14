@@ -420,6 +420,11 @@
         float: right;
         padding: 0;
 
+        @media screen and (min-width:1000px) {
+            width: 45rem;
+            
+        }
+
         @media screen and (max-width: 600px) {
                 width: 15rem;
                 padding: 0;
